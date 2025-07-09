@@ -1,0 +1,11 @@
+{
+    "onboardingTitle": "Smart Detection",
+    "onboardingSubtitle": "Automatically scan UI content to block haram images and videos.",
+    "next": "Next",
+    "get_started": "Get started",
+    "onboarding_Second_Title": "Real-time AI Filtering",
+    "onboarding_Second_Subtitle": "Run the Haram Filter AI model with a tap — get instant feedback whether you're clean or need revision.",
+    "onboarding_Third_Title": "Privacy First",
+    "onboarding_Third_Subtitle": "All processing happens on-device, ensuring your data stays private and secure."
+
+}
