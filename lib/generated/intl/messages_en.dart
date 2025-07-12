@@ -22,7 +22,16 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "aiRunning": MessageLookupByLibrary.simpleMessage("AI is running"),
+    "aiRunningSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Please wait while the AI processes the content.",
+    ),
+    "failedToRunAI": MessageLookupByLibrary.simpleMessage("Failed to run AI"),
     "get_started": MessageLookupByLibrary.simpleMessage("Get started"),
+    "haramFilterTitle": MessageLookupByLibrary.simpleMessage("Haram Filter"),
+    "homeTitle": MessageLookupByLibrary.simpleMessage(
+      "Ready to build with peace of mind?",
+    ),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "onboardingSubtitle": MessageLookupByLibrary.simpleMessage(
       "Automatically scan UI content to block haram images and videos.",
@@ -40,5 +49,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "onboarding_Third_Title": MessageLookupByLibrary.simpleMessage(
       "Privacy First",
     ),
+    "runHaramFilter": MessageLookupByLibrary.simpleMessage("Run Haram Filter "),
+    "stopeModel": MessageLookupByLibrary.simpleMessage("Stop Haram Filter"),
+    "welcomeTitle": MessageLookupByLibrary.simpleMessage("Welcome"),
   };
 }

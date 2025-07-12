@@ -123,6 +123,76 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome`
+  String get welcomeTitle {
+    return Intl.message('Welcome', name: 'welcomeTitle', desc: '', args: []);
+  }
+
+  /// `Ready to build with peace of mind?`
+  String get homeTitle {
+    return Intl.message(
+      'Ready to build with peace of mind?',
+      name: 'homeTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Haram Filter`
+  String get haramFilterTitle {
+    return Intl.message(
+      'Haram Filter',
+      name: 'haramFilterTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Run Haram Filter `
+  String get runHaramFilter {
+    return Intl.message(
+      'Run Haram Filter ',
+      name: 'runHaramFilter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `AI is running`
+  String get aiRunning {
+    return Intl.message('AI is running', name: 'aiRunning', desc: '', args: []);
+  }
+
+  /// `Please wait while the AI processes the content.`
+  String get aiRunningSubtitle {
+    return Intl.message(
+      'Please wait while the AI processes the content.',
+      name: 'aiRunningSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Failed to run AI`
+  String get failedToRunAI {
+    return Intl.message(
+      'Failed to run AI',
+      name: 'failedToRunAI',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Stop Haram Filter`
+  String get stopeModel {
+    return Intl.message(
+      'Stop Haram Filter',
+      name: 'stopeModel',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

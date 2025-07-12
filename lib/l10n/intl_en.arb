@@ -6,6 +6,14 @@
     "onboarding_Second_Title": "Real-time AI Filtering",
     "onboarding_Second_Subtitle": "Run the Haram Filter AI model with a tap — get instant feedback whether you're clean or need revision.",
     "onboarding_Third_Title": "Privacy First",
-    "onboarding_Third_Subtitle": "All processing happens on-device, ensuring your data stays private and secure."
+    "onboarding_Third_Subtitle": "All processing happens on-device, ensuring your data stays private and secure.",
+    "welcomeTitle": "Welcome",
+    "homeTitle": "Ready to build with peace of mind?",
+    "haramFilterTitle": "Haram Filter",
+    "runHaramFilter": "Run Haram Filter ",
+    "aiRunning": "AI is running",
+    "aiRunningSubtitle": "Please wait while the AI processes the content.",
+    "failedToRunAI": "Failed to run AI",
+    "stopeModel": "Stop Haram Filter"
 
 }

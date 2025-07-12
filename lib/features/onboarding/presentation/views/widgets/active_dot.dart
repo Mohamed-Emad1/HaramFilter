@@ -2,7 +2,8 @@ import 'package:flutter/widgets.dart';
 import 'package:haram_filter/core/styles/app_colors.dart';
 
 class ActiveDot extends StatelessWidget {
-  const ActiveDot({super.key});
+  const ActiveDot({super.key, this.dotColor = AppColors.buttonColor});
+  final Color dotColor;
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class ActiveDot extends StatelessWidget {
       height: 10,
       margin: const EdgeInsets.symmetric(horizontal: 4),
       decoration: BoxDecoration(
-        color: AppColors.buttonColor,
+        color: dotColor,
         shape: BoxShape.circle,
       ),
     );

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:haram_filter/core/helper_functions/on_generate_routes.dart';
+import 'package:haram_filter/core/services/service_locator.dart';
 import 'package:haram_filter/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:haram_filter/generated/l10n.dart';
 
 void main() {
+  setupServiceLocator();
   runApp(const HaramFilter());
 }
 
@@ -15,7 +17,7 @@ class HaramFilter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-                  localizationsDelegates: [
+      localizationsDelegates: [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
