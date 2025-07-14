@@ -22,18 +22,24 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "account": MessageLookupByLibrary.simpleMessage("الحساب"),
     "aiRunning": MessageLookupByLibrary.simpleMessage(
       "الذكاء الاصطناعي قيد التشغيل",
     ),
     "aiRunningSubtitle": MessageLookupByLibrary.simpleMessage(
       "يرجى الانتظار أثناء معالجة المحتوى.",
     ),
+    "app_settings": MessageLookupByLibrary.simpleMessage("إعدادات التطبيق"),
+    "darkMode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
     "failedToRunAI": MessageLookupByLibrary.simpleMessage(
       "فشل في تشغيل الذكاء الاصطناعي",
     ),
     "get_started": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
     "haramFilterTitle": MessageLookupByLibrary.simpleMessage("فلتر الحرام"),
+    "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
     "homeTitle": MessageLookupByLibrary.simpleMessage("جاهز للبناء براحة بال؟"),
+    "language": MessageLookupByLibrary.simpleMessage("اللغة"),
+    "name": MessageLookupByLibrary.simpleMessage("الاسم"),
     "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "onboardingSubtitle": MessageLookupByLibrary.simpleMessage(
       "قم بمسح محتوى الواجهة تلقائيًا لحظر الصور والفيديوهات المحرمة.",
@@ -52,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "الخصوصية أولًا",
     ),
     "runHaramFilter": MessageLookupByLibrary.simpleMessage("تشغيل فلتر الحرام"),
+    "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "stopeModel": MessageLookupByLibrary.simpleMessage("إيقاف فلتر الحرام"),
     "welcomeTitle": MessageLookupByLibrary.simpleMessage("مرحبًا بك"),
   };

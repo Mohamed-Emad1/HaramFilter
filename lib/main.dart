@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:haram_filter/core/cubits/language_cubit/language_cubit.dart';
 import 'package:haram_filter/core/helper_functions/on_generate_routes.dart';
 import 'package:haram_filter/core/services/service_locator.dart';
 import 'package:haram_filter/core/services/shared_preferences.dart';
@@ -27,21 +28,32 @@ class HaramFilter extends StatelessWidget {
     bool isOnBoardingViewSeen = SharedPreferencesSingleton.getBool(
       kisOnBoardingView,
     );
-    return MaterialApp(
-      localizationsDelegates: [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: S.delegate.supportedLocales,
+    return BlocProvider(
+      create: (context) => LanguageCubit(),
+      child: BlocBuilder<LanguageCubit, LanguageState>(
+        builder: (context, languageState) {
+        final Locale locale = (languageState is EnglishLanguage)
+                  ? const Locale('en')
+                  : const Locale('ar');
+          return MaterialApp(
+            locale: locale,
+            localizationsDelegates: [
+              S.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: S.delegate.supportedLocales,
 
-      debugShowCheckedModeBanner: false,
-      title: 'Haram Filter',
-      onGenerateRoute: onGenerateRoute,
-      initialRoute: isOnBoardingViewSeen
-          ? MainView.routeName
-          : OnboardingView.routeName,
+            debugShowCheckedModeBanner: false,
+            title: 'Haram Filter',
+            onGenerateRoute: onGenerateRoute,
+            initialRoute: isOnBoardingViewSeen
+                ? MainView.routeName
+                : OnboardingView.routeName,
+          );
+        },
+      ),
     );
   }
 }
