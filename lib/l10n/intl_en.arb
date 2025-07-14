@@ -16,6 +16,11 @@
     "failedToRunAI": "Failed to run AI",
     "stopeModel": "Stop Haram Filter",
     "home": "Home",  
-    "settings": "Settings"
+    "settings": "Settings",
+    "account": "Account",
+    "name": "Name",
+    "language": "Language",
+    "darkMode": "Dark Mode",
+    "app_settings": "App Settings"
 
 }

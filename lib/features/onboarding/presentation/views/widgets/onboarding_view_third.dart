@@ -1,6 +1,8 @@
 import 'package:flutter/widgets.dart';
+import 'package:haram_filter/core/services/shared_preferences.dart';
 import 'package:haram_filter/core/styles/app_styles.dart';
 import 'package:haram_filter/core/utils/app_images.dart';
+import 'package:haram_filter/core/utils/constants.dart';
 import 'package:haram_filter/core/utils/widgets/custom_button.dart';
 import 'package:haram_filter/features/home/presentation/views/main_view.dart';
 import 'package:haram_filter/features/onboarding/presentation/views/widgets/dots.dart';
@@ -42,6 +44,7 @@ class OnboardingViewThird extends StatelessWidget {
         CustomButton(
           text: S.of(context).get_started,
           onPressed: () {
+            SharedPreferencesSingleton.setBool(kisOnBoardingView, true);
             Navigator.pushNamed(context, MainView.routeName);
           },
         ),
