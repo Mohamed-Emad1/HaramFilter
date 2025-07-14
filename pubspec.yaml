@@ -35,6 +35,7 @@ dependencies:
   flutter_bloc: ^9.1.1
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.4.6
   get_it: ^8.0.3
   shared_preferences: ^2.5.3
 
@@ -88,3 +89,10 @@ flutter_intl:
 
 # flutter_intl:
 #   enabled: true
+
+flutter_native_splash:
+  color: "#F7FAFC"
+  image: assets/images/logo.png
+  android: true
+  ios: true
+  web: false
