@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "failedToRunAI": MessageLookupByLibrary.simpleMessage("Failed to run AI"),
     "get_started": MessageLookupByLibrary.simpleMessage("Get started"),
     "haramFilterTitle": MessageLookupByLibrary.simpleMessage("Haram Filter"),
+    "home": MessageLookupByLibrary.simpleMessage("Home"),
     "homeTitle": MessageLookupByLibrary.simpleMessage(
       "Ready to build with peace of mind?",
     ),
@@ -50,6 +51,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Privacy First",
     ),
     "runHaramFilter": MessageLookupByLibrary.simpleMessage("Run Haram Filter "),
+    "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "stopeModel": MessageLookupByLibrary.simpleMessage("Stop Haram Filter"),
     "welcomeTitle": MessageLookupByLibrary.simpleMessage("Welcome"),
   };

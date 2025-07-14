@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:haram_filter/core/styles/app_styles.dart';
 import 'package:haram_filter/core/utils/app_images.dart';
 import 'package:haram_filter/core/utils/widgets/custom_button.dart';
-import 'package:haram_filter/features/home/presentation/views/home_view.dart';
+import 'package:haram_filter/features/home/presentation/views/main_view.dart';
 import 'package:haram_filter/features/onboarding/presentation/views/widgets/dots.dart';
 import 'package:haram_filter/generated/l10n.dart';
 
@@ -42,7 +42,7 @@ class OnboardingViewThird extends StatelessWidget {
         CustomButton(
           text: S.of(context).get_started,
           onPressed: () {
-            Navigator.pushNamed(context, HomeView.routeName);
+            Navigator.pushNamed(context, MainView.routeName);
           },
         ),
         SizedBox(height: 16),

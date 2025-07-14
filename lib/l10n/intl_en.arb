@@ -14,6 +14,8 @@
     "aiRunning": "AI is running",
     "aiRunningSubtitle": "Please wait while the AI processes the content.",
     "failedToRunAI": "Failed to run AI",
-    "stopeModel": "Stop Haram Filter"
+    "stopeModel": "Stop Haram Filter",
+    "home": "Home",  
+    "settings": "Settings"
 
 }

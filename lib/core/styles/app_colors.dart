@@ -5,4 +5,5 @@ abstract class AppColors {
   static const dotsColor = Color(0xff305269);
   static const greenColor = Color(0xff0AD95C);
   static const primaryColor = Color(0xff0F1C24);
+  static const iconColor = Color(0xff0D171C);
 }
