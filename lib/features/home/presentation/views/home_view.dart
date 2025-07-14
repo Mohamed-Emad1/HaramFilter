@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:haram_filter/core/services/service_locator.dart';
-import 'package:haram_filter/features/domain/repos/model_repo.dart';
+import 'package:haram_filter/features/home/domain/model_repo.dart';
 import 'package:haram_filter/features/home/presentation/manager/cubit/model_run_cubit.dart';
 import 'package:haram_filter/features/home/presentation/views/widgets/home_view_body.dart';
 

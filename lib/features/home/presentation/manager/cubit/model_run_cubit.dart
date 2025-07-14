@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:haram_filter/features/domain/repos/model_repo.dart';
+import 'package:haram_filter/features/home/domain/model_repo.dart';
 import 'package:meta/meta.dart';
 
 part 'model_run_state.dart';

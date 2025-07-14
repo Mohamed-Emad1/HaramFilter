@@ -1,1 +1,18 @@
-{}
+{
+  "onboardingTitle": "الكشف الذكي",
+  "onboardingSubtitle": "قم بمسح محتوى الواجهة تلقائيًا لحظر الصور والفيديوهات المحرمة.",
+  "next": "التالي",
+  "get_started": "ابدأ الآن",
+  "onboarding_Second_Title": "تصفية بالذكاء الاصطناعي في الوقت الحقيقي",
+  "onboarding_Second_Subtitle": "قم بتشغيل نموذج Haram Filter بلمسة واحدة — واحصل على نتيجة فورية توضح إن كان المحتوى آمنًا أو يحتاج مراجعة.",
+  "onboarding_Third_Title": "الخصوصية أولًا",
+  "onboarding_Third_Subtitle": "تتم جميع المعالجات على الجهاز لضمان بقاء بياناتك خاصة وآمنة.",
+  "welcomeTitle": "مرحبًا بك",
+  "homeTitle": "جاهز للبناء براحة بال؟",
+  "haramFilterTitle": "فلتر الحرام",
+  "runHaramFilter": "تشغيل فلتر الحرام",
+  "aiRunning": "الذكاء الاصطناعي قيد التشغيل",
+  "aiRunningSubtitle": "يرجى الانتظار أثناء معالجة المحتوى.",
+  "failedToRunAI": "فشل في تشغيل الذكاء الاصطناعي",
+  "stopeModel": "إيقاف فلتر الحرام"
+}

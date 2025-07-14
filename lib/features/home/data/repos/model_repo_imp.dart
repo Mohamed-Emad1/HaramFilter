@@ -1,5 +1,5 @@
 import 'package:dartz/dartz.dart';
-import 'package:haram_filter/features/domain/repos/model_repo.dart';
+import 'package:haram_filter/features/home/domain/model_repo.dart';
 
 class ModelRepoImp extends ModelRepo{
   @override
