@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:haram_filter/core/cubits/dark_mode/dark_mode_cubit.dart';
 import 'package:haram_filter/core/cubits/language_cubit/language_cubit.dart';
 import 'package:haram_filter/core/services/shared_preferences.dart';
 import 'package:haram_filter/core/styles/app_styles.dart';
@@ -26,7 +27,6 @@ class SettingsViewBody extends StatelessWidget {
           SwitcherWidget(
             text: S.of(context).language,
             onChanged: (value) {
-              print("Language changed to: $value ");
               // Handle language change
               if (value) {
                 // Switch to English
@@ -36,14 +36,23 @@ class SettingsViewBody extends StatelessWidget {
                 context.read<LanguageCubit>().setEnglishLanguage();
               }
             },
-            value:!SharedPreferencesSingleton.getBool(kisEnglishLanguage),
+            value: !SharedPreferencesSingleton.getBool(kisEnglishLanguage),
           ),
           SizedBox(height: 8),
-          SwitcherWidget(
-            value: true,
-            text: S.of(context).darkMode,
-            onChanged: (value) {
-              // Handle dark mode toggle
+
+          BlocBuilder<DarkModeCubit, DarkModeState>(
+            builder: (context, darkModeState) {
+              return SwitcherWidget(
+                value: darkModeState is DarkModeOn,
+                text: S.of(context).darkMode,
+                onChanged: (value) {
+                  if (value) {
+                    context.read<DarkModeCubit>().turnOnDarkMode();
+                  } else {
+                    context.read<DarkModeCubit>().turnOffDarkMode();
+                  }
+                },
+              );
             },
           ),
         ],

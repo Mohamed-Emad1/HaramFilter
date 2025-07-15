@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:haram_filter/core/cubits/dark_mode/dark_mode_cubit.dart';
 import 'package:haram_filter/core/cubits/language_cubit/language_cubit.dart';
 import 'package:haram_filter/core/helper_functions/on_generate_routes.dart';
 import 'package:haram_filter/core/services/service_locator.dart';
@@ -28,8 +29,17 @@ class HaramFilter extends StatelessWidget {
     bool isOnBoardingViewSeen = SharedPreferencesSingleton.getBool(
       kisOnBoardingView,
     );
-    return BlocProvider(
-      create: (context) => LanguageCubit(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<LanguageCubit>(
+          create: (context) => LanguageCubit(),
+
+        ),
+        BlocProvider<DarkModeCubit>(
+          create: (context) => DarkModeCubit(),
+        ),
+      ],
+      // create: (context) => LanguageCubit(),
       child: BlocBuilder<LanguageCubit, LanguageState>(
         builder: (context, languageState) {
         final Locale locale = (languageState is EnglishLanguage)
